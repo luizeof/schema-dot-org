@@ -2,12 +2,18 @@
 
 require 'json'
 require 'validated_object'
+require 'schema_dot_org/organization'
+require 'schema_dot_org/person'
+require 'schema_dot_org/place'
+require 'schema_dot_org/search_action'
+require 'schema_dot_org/web_site'
 
 module SchemaDotOrg
   #
   # Base class for schema types. Refactors out common code.
   #
   class SchemaType < ValidatedObject::Base
+    
     ROOT_ATTR = { "@context" => "http://schema.org" }.freeze
     UNQUALIFIED_CLASS_NAME_REGEX = /([^:]+)$/
 
