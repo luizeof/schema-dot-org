@@ -27,7 +27,7 @@ module SchemaDotOrg
 
 
     def to_json_ld(pretty: false)
-      "<script type=\"application/ld+json\">\n" + to_json(pretty: pretty, as_root: true) + "\n</script>"
+      "\n<script type=\"application/ld+json\">\n" + to_json(pretty: pretty, as_root: true) + "\n</script>"
     end
 
 
