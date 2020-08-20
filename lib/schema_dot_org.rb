@@ -10,5 +10,4 @@ require 'schema_dot_org/search_action'
 require 'schema_dot_org/web_site'
 
 module SchemaDotOrg
-
 end
