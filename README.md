@@ -56,7 +56,8 @@ Let's say you have a Rails app. If you put this in a controller:
   "sameAs": [
     "https://twitter.com/law_is_code",
     "https://www.facebook.com/PublicDotLaw"
-  ],
+  ]
+}
 </script>
 ```
 
@@ -159,7 +160,7 @@ To install this gem onto your local machine, run `bundle exec rake install`.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/dogweather/schema_dot_org.
+Bug reports and pull requests are welcome on GitHub at https://github.com/public-law/schema-dot-org.
 
 ## License
 

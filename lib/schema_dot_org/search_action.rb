@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'schema_dot_org'
+require 'schema_dot_org/schema_type'
 
 
 module SchemaDotOrg
@@ -13,7 +14,7 @@ module SchemaDotOrg
     def _to_json_struct
       {
         'target' => self.target,
-        'query-input' => self.query_input
+        'query_input' => self.query_input
       }
     end
   end

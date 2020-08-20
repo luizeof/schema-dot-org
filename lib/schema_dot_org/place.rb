@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'schema_dot_org'
+require 'schema_dot_org/schema_type'
 
 
 module SchemaDotOrg

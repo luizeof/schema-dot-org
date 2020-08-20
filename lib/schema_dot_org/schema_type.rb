@@ -1,8 +1,21 @@
+<<<<<<< HEAD
 require 'json'
 require 'validated_object'
 
 module SchemaDotOrg
   class SchemaType < ValidatedObject::Base
+=======
+require 'date'
+require 'schema_dot_org'
+
+module SchemaDotOrg
+
+  #
+  # Base class for schema types. Refactors out common code.
+  #
+  class SchemaType < ValidatedObject::Base
+    
+>>>>>>> master
     ROOT_ATTR = { "@context" => "http://schema.org" }.freeze
     UNQUALIFIED_CLASS_NAME_REGEX = /([^:]+)$/
 
@@ -38,7 +51,11 @@ module SchemaDotOrg
     # Use the class name to create the "@type" attribute.
     # @return a hash structure representing json.
     def to_json_struct
+<<<<<<< HEAD
       { "@type" => un_namespaced_classname }.merge(_to_json_struct.reject { |_, v| v.blank? })
+=======
+      { "@type" => un_namespaced_classname }.merge(_to_json_struct.compact)
+>>>>>>> master
     end
 
 
@@ -53,10 +70,13 @@ module SchemaDotOrg
       Regexp.last_match(1)
     end
 
+<<<<<<< HEAD
     def object_to_json_struct(object)
       return nil unless object
       object.to_json_struct
     end
+=======
+>>>>>>> master
 
     private
 
@@ -64,4 +84,9 @@ module SchemaDotOrg
       defined?(Rails) && Rails.env.production?
     end
   end
+<<<<<<< HEAD
 end
+=======
+
+end
+>>>>>>> master
