@@ -2,6 +2,7 @@
 
 require 'date'
 require 'schema_dot_org'
+require 'schema_dot_org/schema_type'
 require 'schema_dot_org/person'
 require 'schema_dot_org/place'
 
